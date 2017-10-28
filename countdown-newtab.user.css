@@ -1,0 +1,65 @@
+/*
+  A very simple dark about:newtab theme
+*/
+
+@-moz-document url("about:newtab")
+{
+  #newtab-vertical-margin
+  {
+    background-color: black;
+    background:
+
+      /*
+        Want to CHANGE THE BACKGROUND ?
+        Copy/paste a the web address between the quote signs,
+          or even better download the image file to your disc first and write the pathway instead
+         (because the page will load the image much faster from an internal disc)
+       */
+
+      /* Peer to nowhere */
+      /* url("http://i.imgur.com/yEjqwN0.jpg"), */
+
+      /* Aurora */
+      /* url("https://upload.wikimedia.org/wikipedia/commons/9/9b/Aurora_borealis_above_Lyngenfjorden%2C_2012_March.jpg"), */
+
+      /* Shuttle launch */
+      url("https://upload.wikimedia.org/wikipedia/commons/f/f9/STS-130_exhaust_cloud_engulfs_Launch_Pad_39A.jpg"),
+
+      /* night sky gradient fallback */
+      linear-gradient(to bottom, rgba(0, 24, 72, .90), rgba(4, 4, 2, 1.0) 90%)
+      center center no-repeat;
+
+
+    /*
+      See also:
+      Night sky with twinkling stars - CSS3 only
+      http://codepen.io/WebSonick/pen/vjmgu
+     */
+
+    background-size: cover;
+    background-attachment:fixed;
+    border-top: none ;
+    -moz-box-flex: 1;
+  }
+  .newtab-site
+  {
+
+      opacity: .5;
+  }
+
+  .newtab-site:hover
+  {
+
+      opacity: .8;
+  }
+
+  .newtab-title
+  {
+      color: black;
+  }
+
+  #newtab-intro-what, .newtab-sponsored, .newtab-cell:hover .newtab-title
+  {
+     color: white;
+  }
+}
